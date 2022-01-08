@@ -6,6 +6,8 @@ import Abstract from "../../assets/Abstract.mp4"
 
 // IMPORTING REACT REVEAL
 import Fade from "react-reveal/Fade";
+import { SiFiverr, SiGithub, SiLinkedin, SiTwitter, SiUpwork } from "react-icons/si";
+import { FiMail, FiPhoneCall } from "react-icons/fi";
 
 
 const Home = () => {
@@ -28,8 +30,37 @@ const Home = () => {
             Blockchain and MERN Stack Web Developer-Designer
           </h3>
 
+                   <div style={{marginTop:"calc(3vh + 3vw)"}}>
+                       <a target="blank" href="https://github.com/SA1MAANKHAN">
+                    <SiGithub className="contactIcons " />
+                  </a>
+                  <a
+                    target="blank"
+                    href="https://www.linkedin.com/in/salmaan-khan-7694ab1a0/"
+                  >
+                    <SiLinkedin className="contactIcons ml-3" />
+                  </a>
+                
+                     <a target="blank" href="https://twitter.com/Salmaan65991730">
+                    <SiTwitter className="contactIcons ml-3" />
+                  </a>
+                         <a target="blank" href="https://www.fiverr.com/salmaank9">
+                    <SiFiverr className="contactIcons ml-3" />
+                  </a>
+                          <a target="blank" href="https://www.upwork.com/freelancers/~01ab722c7896fa2129">
+                    <SiUpwork className="contactIcons ml-3" />
+                  </a>
+                                <a href="mailto:leosalmaan5@gmail.com">
+                    <FiMail className="contactIcons ml-3" />
+                  </a>
+                              <a href="tel:918968740348" >
+                    <FiPhoneCall className="contactIcons ml-3" />
+                  </a>
+                </div>
+
         </div>
       </div>
+   
     </>
   );
 };

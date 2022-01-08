@@ -4,7 +4,8 @@ import React from "react";
 import Chip from "@material-ui/core/Chip";
 
 // IMPORTING REACT ICONS
-import { SiLinkedin, SiGithub } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiTwitter, SiFiverr, SiUpwork } from "react-icons/si";
+import { FiMail, FiPhoneCall} from "react-icons/fi";
 
 import Fade from "react-reveal/Fade";
 
@@ -17,55 +18,48 @@ const Footer = () => {
             <div className="col-12">
               <div className="text-center">
                 <div className="BrandName">
-                  <h1>SALMAAN</h1>
+                  <h1 style={{textDecoration:"none"}}>SALMAAN KHAN</h1>
                   <Chip
                     className="UnderNameNChip"
                     style={{
-                      fontSize: "1.2rem",
-                      height: "2rem",
-                      marginTop: "-0.4rem",
-                      letterSpacing: "0.4rem",
+                      fontSize: "1.5rem",
+                      height: "2.5rem",
+                      marginTop: ".2rem",
                     }}
-                    label="FRONT-END DEVELOPER"
+                    label="BLOCKCHAIN & MERN DEVELOPER"
                   />
                 </div>
-                <div className="mt-4">
+                       <div style={{marginTop:"calc(1.5vh + 1.5vw)"}}>
+                       <a target="blank" href="https://github.com/SA1MAANKHAN">
+                    <SiGithub className="contactIcons " />
+                  </a>
                   <a
                     target="blank"
                     href="https://www.linkedin.com/in/salmaan-khan-7694ab1a0/"
                   >
-                    <SiLinkedin className="contactIcons mr-3 " />
+                    <SiLinkedin className="contactIcons ml-3" />
                   </a>
-                  <a target="blank" href="https://github.com/SA1MAANKHAN">
-                    <SiGithub className="contactIcons ml-3" />
+                
+                     <a target="blank" href="https://twitter.com/Salmaan65991730">
+                    <SiTwitter className="contactIcons ml-3" />
                   </a>
-                </div>
-              </div>
-
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-6 my-4 text-white">
-                    <h2>Email:</h2>
-                    <h2>
-                      <a
-                        className="FooterGmailLink"
-                        href="mailto:leosalmaan5@gmail.com"
-                      >
-                        leosalmaan5@gmail.com
-                      </a>
-                    </h2>
-                  </div>
-                  <div className="col-md-6 my-4 text-right text-white">
-                    <h2>Whatsapp No:</h2>
-                    <a href="tel:918968740348">
-                      <h1>+91 89687-40348</h1>
-                    </a>
-                  </div>
+                         <a target="blank" href="https://www.fiverr.com/salmaank9">
+                    <SiFiverr className="contactIcons ml-3" />
+                  </a>
+                          <a target="blank" href="https://www.upwork.com/freelancers/~01ab722c7896fa2129">
+                    <SiUpwork className="contactIcons ml-3" />
+                  </a>
+                            <a href="mailto:leosalmaan5@gmail.com">
+                    <FiMail className="contactIcons ml-3" />
+                  </a>
+                              <a href="tel:918968740348" >
+                    <FiPhoneCall className="contactIcons ml-3" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="h4 text-center text-white pt-4 mt-5">
+          <div className="h5 text-center text-white m-5" >
             ©2020 . All rights Reserved
           </div>
         </div>
