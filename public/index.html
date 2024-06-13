@@ -1,72 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fonts --- Open Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet">
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>SALMAAN KHAN</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, a {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+        section {
+            margin-top: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Salmaan Khan</h1>
+        <p>Location: Chandigarh, Punjab, India | Ph: +91 89687 40348 | <a href="mailto:salmaankhan8787@gmail.com">salmaankhan8787@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/salmaan-khan-7694ab1a0/">LinkedIn</a> | <a href="https://github.com/khansalmaan">GitHub</a></p>
+    </header>
+    <div class="container">
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Language:</strong> Golang, Nodejs, Java, Solidity</li>
+                <li><strong>Framework:</strong> Gin, Express, Spring, Web3.js</li>
+                <li><strong>Database:</strong> PostgreSQL, DynamoDB, MongoDB, Redis, Memcached</li>
+                <li><strong>Frontend:</strong> React, Redux, React Query, Vanilla Js, Sass, Tailwind CSS</li>
+                <li><strong>Other Technologies:</strong> gRPC, Microservices, Apache Kafka, Circuit Breaking, Distributed Tracing</li>
+            </ul>
+        </section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>SDE 1 (Backend)</strong><br>
+                    Swiggy (Contract), ChicMic (Vendor), Remote<br>
+                    FEB 2023 – APR 2024 [1 year & 2 months]<br><br>
+                    <ol>
+                        <li>Collaborated with the CRM team to successfully deliver multiple projects.</li>
+                        <li>Contributed to the development of the chatbot engine within CRM.</li>
+                        <li>Contributed significantly to the migration of the internal ticketing system to Salesforce.</li>
+                        <li>Designed and implemented Business continuity plan systems for chat infrastructure.</li>
+                    </ol>
+                </li><br>
+                <li>
+                    <strong>Associate Software Engineer</strong><br>
+                    ChicMic, Mohali<br>
+                    FEB 2022 - JAN 2023 [1 year]<br><br>
+                    <ol>
+                        <li>Architected and developed backend services from scratch for web games and chat apps.</li>
+                        <li>Created a real-time data communication socket server for a chat application.</li>
+                        <li>Enhanced the in-house biometric system by devising an optimized punch validation algorithm.</li>
+                    </ol>
+                </li><br>
+                <li>
+                    <strong>Full Stack Developer</strong><br>
+                    Runaway Games Pte. Ltd, Singapore (Part-time) (Remote)<br>
+                    MAY 2021 - JAN 2022 [9 months]<br><br>
+                    <ol>
+                        <li>Developed and launched multiple browser-based multiplayer corporate team-building games, serving renowned clients including Google, Twitch, and Amazon.</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section id="project-experience">
+            <h2>Project Experience</h2>
+            <ul>
+                <li>
+                    <strong>IRCTC (Swiggy):</strong> DEC 2023 - FEB 2024<br>
+                    <em>Technologies:</em> Go, Java, Node.js, gRPC, DynamoDB, PostgreSQL, Redis, Docker<br>
+                    Implemented a special support ticket creation system and agent queue assignment for IRCTC orders.
+                </li>
+                <li>
+                    <strong>Relay Delay (Swiggy):</strong> JUL 2023 - NOV 2023<br>
+                    <em>Technologies:</em> Go, Java, Node.js, gRPC, DynamoDB, MySQL, Kafka, Distributed Tracing<br>
+                    Updated chatbot to work in sync with a new system for delaying the relaying of orders to restaurants, optimizing delivery boy wait times.
+                </li>
+                <li>
+                    <strong>Nemoland (ChicMic):</strong> JUL 2022 - DEC 2022<br>
+                    <em>Technologies:</em> Node.js, Solidity, Redis, MongoDB, EVM Smart Contracts<br>
+                    Developed backend services for a 2D world game enabling users to buy, sell, and trade land linked to a smart contract on Ethereum Blockchain.
+                </li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Punjabi University Patiala, Punjab, India</strong><br>
+                    JUL 2018 - May 2022<br>
+                    Bachelor of Technology, Engineering, CGPA 8.1
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
 </html>
