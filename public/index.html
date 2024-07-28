@@ -1,137 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salmaan</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salmaan Khan Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header, a {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
-        }
-        section {
-            margin-top: 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            position: relative;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 25px 0;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      section {
+        margin: 20px 0;
+      }
+
+      .project {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .project img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+
+      .project-description {
+        flex: 1;
+      }
+
+      .project-links a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      footer {
+        text-align: center;
+        margin: 20px 0;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Salmaan Khan</h1>
-        <p>Location: Chandigarh, Punjab, India | Ph: +91 89687 40348 | <a href="mailto:salmaankhan8787@gmail.com">salmaankhan8787@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/in/salmaan-khan-7694ab1a0/">LinkedIn</a> | <a href="https://github.com/khansalmaan">GitHub</a></p>
-    </header>
+  </head>
+  <body>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+
     <div class="container">
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Language:</strong> Golang, Nodejs, Java, Solidity</li>
-                <li><strong>Framework:</strong> Gin, Express, Spring, Web3.js</li>
-                <li><strong>Database:</strong> PostgreSQL, DynamoDB, MongoDB, Redis, Memcached</li>
-                <li><strong>Frontend:</strong> React, Redux, React Query, Vanilla Js, Sass, Tailwind CSS</li>
-                <li><strong>Other Technologies:</strong> gRPC, Microservices, Apache Kafka, Circuit Breaking, Distributed Tracing</li>
-            </ul>
-        </section>
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <strong>SDE 1 (Backend)</strong><br>
-                    Swiggy (Contract), ChicMic (Vendor), Remote<br>
-                    FEB 2023 – APR 2024 [1 year & 2 months]<br><br>
-                    <ol>
-                        <li>Collaborated with the CRM team to successfully deliver multiple projects.</li>
-                        <li>Contributed to the development of the chatbot engine within CRM.</li>
-                        <li>Contributed significantly to the migration of the internal ticketing system to Salesforce.</li>
-                        <li>Designed and implemented Business continuity plan systems for chat infrastructure.</li>
-                    </ol>
-                </li><br>
-                <li>
-                    <strong>Associate Software Engineer</strong><br>
-                    ChicMic, Mohali<br>
-                    FEB 2022 - JAN 2023 [1 year]<br><br>
-                    <ol>
-                        <li>Architected and developed backend services from scratch for web games and chat apps.</li>
-                        <li>Created a real-time data communication socket server for a chat application.</li>
-                        <li>Enhanced the in-house biometric system by devising an optimized punch validation algorithm.</li>
-                    </ol>
-                </li><br>
-                <li>
-                    <strong>Full Stack Developer</strong><br>
-                    Runaway Games Pte. Ltd, Singapore (Part-time) (Remote)<br>
-                    MAY 2021 - JAN 2022 [9 months]<br><br>
-                    <ol>
-                        <li>Developed and launched multiple browser-based multiplayer corporate team-building games, serving renowned clients including Google, Twitch, and Amazon.</li>
-                    </ol>
-                </li>
-            </ul>
-        </section>
-        <section id="project-experience">
-            <h2>Project Experience</h2>
-            <ul>
-                <li>
-                    <strong>IRCTC (Swiggy):</strong> DEC 2023 - FEB 2024<br>
-                    <em>Technologies:</em> Go, Java, Node.js, gRPC, DynamoDB, PostgreSQL, Redis, Docker<br>
-                    Implemented a special support ticket creation system and agent queue assignment for IRCTC orders.
-                </li>
-                <li>
-                    <strong>Relay Delay (Swiggy):</strong> JUL 2023 - NOV 2023<br>
-                    <em>Technologies:</em> Go, Java, Node.js, gRPC, DynamoDB, MySQL, Kafka, Distributed Tracing<br>
-                    Updated chatbot to work in sync with a new system for delaying the relaying of orders to restaurants, optimizing delivery boy wait times.
-                </li>
-                <li>
-                    <strong>Nemoland (ChicMic):</strong> JUL 2022 - DEC 2022<br>
-                    <em>Technologies:</em> Node.js, Solidity, Redis, MongoDB, EVM Smart Contracts<br>
-                    Developed backend services for a 2D world game enabling users to buy, sell, and trade land linked to a smart contract on Ethereum Blockchain.
-                </li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Punjabi University Patiala, Punjab, India</strong><br>
-                    JUL 2018 - May 2022<br>
-                    Bachelor of Technology, Engineering, CGPA 8.1
-                </li>
-            </ul>
-        </section>
+      <section id="name">
+        <h1>Hey, I'm Salmaan 👋</h1>
+      </section>
+
+      <!-- add a line -->
+      <hr />
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm a Backend Engineer with a keen interest in blockchain technology
+          and decentralized applications. With a strong foundation in various
+          programming languages and frameworks, I have experience building
+          scalable and reliable systems. My journey in tech has been both
+          challenging and rewarding, allowing me to work on innovative projects
+          and collaborate with talented teams. I am always eager to learn new
+          technologies and explore creative solutions to complex problems. When
+          I'm not coding, you can find me exploring new tech trends, working on
+          personal projects, or enjoying a good cup of coffee.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <img
+            src="../assets/projects-imgs/Crypto Staking App.png"
+            alt="Project 2"
+          />
+          <div class="project-description">
+            <h3>Crypto Staking App</h3>
+            <p>A decentralized application that allows users to stake their cryptocurrencies and earn rewards.</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project2" target="_blank"
+                >Code</a
+              >
+              <a href="https://yourproject2live.com" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="../assets/projects-imgs/Save+the+Queen+Poster+(Square).jpg"
+            alt="Project 2"
+          />
+          <div class="project-description">
+            <h3>Save The Queen</h3>
+            <p></p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project2" target="_blank"
+                >Code</a
+              >
+              <a href="https://yourproject2live.com" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="../assets/projects-imgs/How+The+Krinch+Stole+Christmas+Poster+(Square)+Medium+Quality.jpg"
+            alt="Project 2"
+          />
+          <div class="project-description">
+            <h3>Krinch</h3>
+            <p>Holiday theme virtual escape room.</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project2" target="_blank"
+                >Code</a
+              >
+              <a href="https://yourproject2live.com" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="../assets/projects-imgs/feud-b981443a.webp"
+            alt="Project 2"
+          />
+          <div class="project-description">
+            <h3>The Feud</h3>
+            <p>Web browser game based on the classic game show, Family Feud.</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project2" target="_blank"
+                >Code</a
+              >
+              <a href="https://yourproject2live.com" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="../assets/projects-imgs/Escape+Spy+Island+Poster+(Square)_Medium+Quality.jpg"
+            alt="Project 2"
+          />
+          <div class="project-description">
+            <h3>Escape Spy Island</h3>
+            <p>Spy theme virtual escape room.</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project2" target="_blank"
+                >Code</a
+              >
+              <a href="https://yourproject2live.com" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="../assets/projects-imgs/Escape+Alcatraz+Poster+(Square)_Medium+Quality+(1).jpg"
+            alt="Project 2"
+          />
+          <div class="project-description">
+            <h3>Escape Alcatraz</h3>
+            <p>Escape the United States Federal Penitentiary, Alcatraz Island, the most secure prison ever built.</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project2" target="_blank"
+                >Code</a
+              >
+              <a href="https://yourproject2live.com" target="_blank">Live</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more projects as needed -->
+      </section>
+
+      <hr />
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li><strong> Languages: </strong> Golang, Node.js, Java, Solidity</li>
+          <li>
+            <strong> UI: </strong> React, Redux, React Query, Vanilla JS, Sass,
+            Tailwind CSS
+          </li>
+          <li><strong> Frameworks: </strong> Gin, Express, Spring, Web3.js</li>
+          <li>
+            <strong> Databases:</strong> PostgreSQL, DynamoDB, MongoDB, Redis,
+            Memcached
+          </li>
+          <li>
+            <strong> Technologies: </strong> gRPC, Microservices, Apache Kafka,
+            Circuit Breaking, Distributed Tracing
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          I'd love to hear from you! Whether you have a question, a project
+          idea, or just want to connect, feel free to reach out to me through
+          any of the following channels:
+        </p>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:your.email@example.com">your.email@example.com</a>
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/yourprofile/" target="_blank"
+              >linkedin.com/in/yourprofile</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/yourusername" target="_blank"
+              >github.com/yourusername</a
+            >
+          </li>
+          <li>
+            Twitter:
+            <a href="https://twitter.com/yourusername" target="_blank"
+              >twitter.com/yourusername</a
+            >
+          </li>
+        </ul>
+      </section>
     </div>
-</body>
+
+    <footer>&copy; 2024 Salmaan Khan</footer>
+  </body>
 </html>
